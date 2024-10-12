@@ -3,7 +3,7 @@ package main
 func main() {
 	todos := Todos{}
 
-	storage := NewStorage[Todos]("todos.json")
+	storage := NewStorage[Todos]("json-data/todos.json")
 	storage.Load(&todos)
 
 	cmdFlags := NewCmdFlags()
